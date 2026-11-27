@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NTTD: Nine Tapz Till Death · Yomi Yokai</title>
+<meta name="description" content="NTTD is a 1v1 tapping fighter for Android by Yomi Yokai. Tap nine boxes in order, draw spells, land the finisher.">
+<meta property="og:title" content="NTTD: Nine Tapz Till Death">
+<meta property="og:description" content="A 1v1 tapping fighter for Android. Tap nine boxes in order, draw spells, land the finisher.">
+<meta property="og:image" content="https://yomiyokai.com/icon.png">
+<meta name="theme-color" content="#0e0c1a">
+<link rel="icon" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="wrap top">
+  <a class="mark" href="./"><i></i>Yomi Yokai</a>
+  <nav class="nav" aria-label="Site"><a class="wide" href="#play">Play</a><a class="wide" href="#test">Testing</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></nav>
+</header>
+
+<main>
+  <section class="wrap hero">
+    <div>
+      <h1 class="title"><span>Nine Tapz</span><span>Till Death</span></h1>
+      <p class="lede">A 1v1 tapping fighter for Android. Break their boxes, draw your spells, win the Nine Count, land the finisher.</p>
+      <div class="cta">
+        <a class="btn" href="#test">Test it on Google Play</a>
+        <a class="btn alt" href="https://discord.gg/HuXFx2wzc4" rel="noopener">Join the Discord</a>
+        <span class="note">Free test build for Android. Online play is for 13 and over.</span>
+      </div>
+    </div>
+    <div class="count" id="count">
+      <div class="lane cpu" aria-hidden="true"><span class="who">CPU · <b id="lvlName">Level 1 · Easy</b></span><span class="pips" id="cpuPips"></span></div>
+      <div class="grid" id="grid" aria-label="Tap the boxes from 1 to 9"></div>
+      <div class="lane you" aria-hidden="true"><span class="who">You</span><span class="pips" id="youPips"></span></div>
+      <p id="countMsg" aria-live="polite">Race the CPU: tap 1 to start, then 2 to 9.</p>
+      <p class="best" id="countBest"></p>
+    </div>
+  </section>
+
+  <section class="band" id="play">
+    <div class="wrap">
+      <h2>How a fight goes</h2>
+      <div class="how">
+        <div><h3>Break their grid</h3><p>Tap the nine boxes on their side. Break them in number order to build a chain, keep tapping to build a combo.</p></div>
+        <div><h3>Draw your spells</h3><p>Fire, Water, Air and Earth are shapes you draw on the screen. Cast two or three in a row to fuse them.</p></div>
+        <div><h3>Win the Nine Count</h3><p>Break through their last grid and it's a race: tap 1 to 9 (or 9 to 1) faster than them.</p></div>
+        <div><h3>Land the finisher</h3><p>Draw the Final Sigil. The more you earned, the more elements it uses, up to a full NTTD Ultimate.</p></div>
+      </div>
+      <ul class="facts"><li>Four archetypes</li><li>Light or Dark side</li><li>Live matches and ghost fights</li><li>Daily Gauntlet board</li><li>Training for every mechanic</li></ul>
+      <div class="reels">
+      <figure class="reel">
+        <video src="spells.mp4" poster="spells.jpg" autoplay muted loop playsinline preload="metadata" aria-label="A fight: drawing Fire, Water, Earth and Air on the grid, then fusing two spells into a Spell Clash"></video>
+        <figcaption>Drawing spells in a real fight: Fire, Water, Earth, then two fused into a Spell Clash.</figcaption>
+      </figure>
+      <figure class="reel">
+        <video src="finish.mp4" poster="finish.jpg" style="aspect-ratio: 360 / 728" autoplay muted loop playsinline preload="metadata" aria-label="The end of a fight: Nine Count races, the Final Sigil drawn as a corrupted triple fusion, Black Rain, the K.O. and the victory screen"></video>
+        <figcaption>The end of a fight: the Nine Count, the Final Sigil drawn as a triple fusion, Black Rain, and the K.O.</figcaption>
+      </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" id="test">
+    <div class="wrap">
+      <h2>Join the test</h2>
+      <h3 class="route">On Google Play</h3>
+      <ol class="steps">
+        <li>On your Android phone, join the <a href="https://groups.google.com/g/nttd-testers" rel="noopener">NTTD tester group</a> with the Google account your phone uses.</li>
+        <li>Open the <a href="https://play.google.com/apps/testing/com.yomiyokai.nttd" rel="noopener">tester sign-up page</a> and tap Become a tester.</li>
+        <li>Install <a href="https://play.google.com/store/apps/details?id=com.yomiyokai.nttd" rel="noopener">NTTD from the Play Store</a>. From then on the Play Store keeps it updated.</li>
+        <li>Stay signed up and play now and then: Google needs testers for 14 days in a row before NTTD can go public.</li>
+      </ol>
+      <h3 class="route">Or install the APK</h3>
+      <ol class="steps">
+        <li>Tap <a href="https://github.com/coldsouthstar/NTTD-builds/releases/latest/download/NTTD.apk">Download for Android</a>, then open the file. Only get the APK from this link, never from a copy someone sends you.</li>
+        <li>For extra safety, let your phone check it first. When Play Protect asks, tap <b>Scan app</b> and wait for the result. It may also say it doesn't recognise the developer, because NTTD is new; once the scan is clean, tap Install anyway.</li>
+        <li>Use one version or the other: they're signed differently, so to switch, uninstall the one you have first.</li>
+      </ol>
+      <p class="note" style="margin-top:18px">Found a bug or have an idea? Tell us in the <a href="https://discord.gg/HuXFx2wzc4" rel="noopener">NTTD Discord</a>, or email <a href="mailto:fullfruntall@yomiyokai.com">fullfruntall@yomiyokai.com</a>.</p>
+      <p class="note" style="margin-top:18px">NTTD flashes and shakes. Read the <a href="safety.html">health and safety notes</a> before you play.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <span>NTTD is made by Yomi Yokai, an independent developer in the UK.</span>
+    <nav aria-label="Legal"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="delete-account.html">Delete your account</a><a href="safety.html">Health and safety</a><a href="https://discord.gg/HuXFx2wzc4" rel="noopener">Discord</a><a href="mailto:fullfruntall@yomiyokai.com">Contact</a></nav>
+  </div>
+</footer>
+
+<script>
+// The Nine Count, playable: race the CPU. Tap 1 to start (the CPU starts with you), then 2 to 9 in order.
+// Win and the CPU gets about 12% faster; lose and you try the same level again. A wrong box costs 0.3 s.
+(() => {
+  const grid = document.getElementById('grid'), wrapEl = document.getElementById('count'), msg = document.getElementById('countMsg'),
+    cpuPips = document.getElementById('cpuPips'), youPips = document.getElementById('youPips'), lvlName = document.getElementById('lvlName'),
+    bestEl = document.getElementById('countBest');
+  const PLAY = 'https://play.google.com/store/apps/details?id=com.yomiyokai.nttd';
+  const store = (k, v) => { try { if (v === undefined) return +localStorage.getItem(k) || 0; localStorage.setItem(k, v); } catch (e) { return 0; } };
+  let level = Math.max(1, store('nttd.site.level')), best = store('nttd.site.best'), wins = 0;
+  let next = 1, t0 = 0, raf = 0, over = false;
+  const pace = (l) => Math.max(1.5, 4.5 * Math.pow(0.88, l - 1));          // seconds for the CPU's full count
+  const tier = (l) => (l <= 2 ? 'Easy' : l <= 5 ? 'Normal' : l <= 8 ? 'Hard' : 'NTTD');
+  const pips = (el) => { el.innerHTML = '<i></i>'.repeat(9); return el.children; };
+  const cpuI = pips(cpuPips), youI = pips(youPips);
+  const fill = (I, n) => { for (let k = 0; k < 9; k++) I[k].classList.toggle('on', k < n); };
+  function label() {
+    lvlName.textContent = `Level ${level} · ${tier(level)}`;
+    lvlName.classList.toggle('record', level > 1 && level >= best);
+    bestEl.textContent = best ? `Best: Level ${best}` : '';
+  }
+  function deal() {
+    const n = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+    for (let i = 8; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [n[i], n[j]] = [n[j], n[i]]; }
+    grid.innerHTML = n.map(v => `<button class="box" type="button" data-n="${v}" aria-label="Box ${v}">${v}</button>`).join('');
+    next = 1; t0 = 0; over = false; wrapEl.classList.remove('done', 'lost');
+    fill(cpuI, 0); fill(youI, 0); label();
+  }
+  function tick() {                                                        // the CPU's count, one pip at a time
+    if (over) return;
+    const t = (performance.now() - t0) / 1000, p = pace(level), n = Math.min(9, Math.floor(t / p * 9 + 0.0001));
+    fill(cpuI, n);
+    if (n >= 9) return end(false, t);
+    raf = requestAnimationFrame(tick);
+  }
+  function end(won, t) {
+    over = true; cancelAnimationFrame(raf);
+    const p = pace(level);
+    if (won) {
+      wins++; level++; if (level - 1 > best) { best = level - 1; store('nttd.site.best', best); }
+      store('nttd.site.level', level);
+      wrapEl.classList.add('done');
+      msg.innerHTML = `You ${t.toFixed(2)} s · CPU ${p.toFixed(2)} s. <b>You win.</b> Level ${level} next.` + (wins >= 3 || level > 5 ? ` <a href="${PLAY}" rel="noopener">Now do it in a real fight</a>.` : '');
+      if (navigator.vibrate) navigator.vibrate([30, 40, 80]);
+    } else {
+      wrapEl.classList.add('lost');
+      msg.textContent = `The CPU finished in ${p.toFixed(2)} s. You were on ${next - 1} of 9. Go again.`;
+      if (navigator.vibrate) navigator.vibrate(60);
+    }
+    setTimeout(deal, won ? 1600 : 1800);
+  }
+  grid.addEventListener('click', (e) => {
+    const b = e.target.closest('.box'); if (!b || b.classList.contains('hit') || over) return;
+    if (+b.dataset.n === next) {
+      if (next === 1) { t0 = performance.now(); raf = requestAnimationFrame(tick); }
+      b.classList.add('hit'); b.setAttribute('aria-label', `Box ${next}, broken`);
+      if (navigator.vibrate) navigator.vibrate(12);
+      fill(youI, next);
+      if (++next > 9) end(true, (performance.now() - t0) / 1000);
+      else msg.textContent = `Next: ${next}`;
+    } else {
+      b.classList.remove('miss'); void b.offsetWidth; b.classList.add('miss');
+      if (next > 1) { t0 -= 300; msg.textContent = `Wrong box: +0.3 s. Find ${next}.`; }   // a slip costs time, like in a fight
+      else msg.textContent = 'Tap 1 to start.';
+    }
+  });
+  deal();
+})();
+</script>
+</body>
+</html>
